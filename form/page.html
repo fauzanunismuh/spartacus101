@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Formulir Pendaftaran</title>
+</head>
+<body>
+    <div class="container animate__animated animate__zoomIn">
+        <!-- Back button -->
+        <a href="../index.html" class="back-button animate__animated animate__fadeIn">
+            <i class="fas fa-arrow-left"></i> Back
+        </a>
+
+        <!-- Profile picture -->
+        <!-- <div class="profile">
+            <h1>Social Media</h1>
+        </div> -->
+
+        <!-- Preview and download -->
+        <div class="image-container">
+            <img src="../img/pamflet.png" alt="Pamflet" class="image-preview">
+            
+            <!-- Link tree button -->
+            <div class="link">
+                <!-- Download button -->
+                <button id="downloadButton" class="download-button animate__animated animate__fadeIn">
+                    <i class="fas fa-download"></i> Lihat
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('downloadButton').addEventListener('click', function() {
+        var fileUrl = '../img/formulir.pdf'; // URL file yang ingin diunduh
+        var fileName = 'formulir.pdf'; // Nama file saat diunduh
+
+        // Buat elemen anchor baru
+        var link = document.createElement('a');
+        link.href = fileUrl;
+        link.download = fileName;
+
+        // Tambahkan elemen ke body, klik, dan hapus
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+});
+
+    </script>
+</body>
+</html>

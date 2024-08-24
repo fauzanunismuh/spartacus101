@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    /* background-image: url("../img/background.png"); */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.profile > h1 {
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #6a110e;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: fantasy;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.link > a {
+    text-decoration: none;
+    width: 100%;
+    color: #222;
+    font-size: 24px;
+    text-align: center;
+    border: 3px solid #222;
+    background-color: #eaeaea;
+    border-radius: 7px;
+    margin: 5px 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link > a i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.link > a:hover {
+    background-color: azure;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Pastikan tombol tetap di atas konten lain */
+}
+
+.back-button i {
+    margin-right: 5px;
+}
+
+.back-button:hover {
+    background-color: #444;
+}
+
+.download-button {
+    text-decoration: none;
+    width: 100%;
+    color: #222;
+    font-size: 24px;
+    text-align: center;
+    border: 3px solid #222;
+    background-color: #eaeaea;
+    border-radius: 7px;
+    margin: 5px 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-button i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.download-button:hover {
+    background-color: azure;
+}
+
+
+.image-container {
+    width: 100%;
+    max-width: 600px;
+    align-items: center;
+    justify-content: center;
+    padding: 45px;
+}
+
+.image-preview {
+    width: 100%;
+    border: #000 solid 5px;
+}
+
+/* Media queries untuk perangkat dengan lebar layar maksimum 768px (tablet dan ponsel) */
+@media (max-width: 768px) {
+    .profile > h1 {
+        font-size: 18px;
+    }
+
+    .link > a {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    .image-container {
+        padding: 20px;
+    }
+
+    .image-preview {
+        width: 100%;
+    }
+
+    .back-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Media queries untuk perangkat dengan lebar layar maksimum 480px (ponsel kecil) */
+@media (max-width: 480px) {
+    .profile > h1 {
+        font-size: 16px;
+    }
+
+    .link > a {
+        font-size: 18px;
+        padding: 6px;
+    }
+
+    .image-container {
+        padding: 10px;
+    }
+
+    .image-preview {
+        width: 100%;
+        border: none;
+    }
+
+    .back-button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
