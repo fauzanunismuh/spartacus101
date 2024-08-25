@@ -23,8 +23,8 @@ body {
   height: 100vh;
   width: 100vw;
   background-image: url("./img/background.png");
-  background-position: center center; /* Ensure background is centered */
-  background-size: cover; /* Cover the entire area */
+  background-position: center;
+  background-size: cover;
   background-attachment: fixed;
 }
 
@@ -112,11 +112,4 @@ body {
   margin-top: 5px;
   font-size: 14px;
   text-align: center;
-}
-
-/* Media Queries for smaller screens */
-@media (max-width: 768px) {
-  .container {
-    background-size: contain; /* Adjust background size for smaller screens */
-  }
 }
