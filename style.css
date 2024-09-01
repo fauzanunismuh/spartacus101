@@ -119,5 +119,6 @@ body {
     background-image: url("./img/background-mobile.jpeg");
     background-size: cover;
     background-position: center;
+    height: 900px;
   }
 }
