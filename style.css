@@ -114,6 +114,15 @@ body {
   text-align: center;
 }
 
+footer {
+  padding: 10px;
+  background-color: #000;
+  width: 100%;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: #eaeaea;
+}
+
 @media only screen and (max-width: 768px) {
   .container {
     background-image: url("./img/background-mobile.jpeg");
