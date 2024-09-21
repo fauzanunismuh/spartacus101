@@ -123,6 +123,12 @@ footer {
   color: #eaeaea;
 }
 
+footer a {
+  text-decoration: underline;
+  color:#eaeaea;
+
+}
+
 @media only screen and (max-width: 768px) {
   .container {
     background-image: url("./img/background-mobile.jpeg");
