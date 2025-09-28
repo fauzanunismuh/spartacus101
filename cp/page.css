@@ -21,7 +21,7 @@ body {
     align-items: center;
     height: 100vh; /* Full viewport height */
     width: 100vw; /* Full viewport width */
-    background-image: url("../img/bb.jpeg");
+    background-image: url("../img/background.png");
     background-position: center;
     background-size: cover;
     background-attachment: fixed; /* Keeps the background image fixed */
